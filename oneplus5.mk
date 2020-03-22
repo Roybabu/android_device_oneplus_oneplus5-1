@@ -20,15 +20,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/oneplus/msm8998-common/msm8998-common-vendor.mk)
+$(call inherit-product-if-exists, vendor/oneplus/oneplus5/oneplus5-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-pa
-
-# Properties
--include $(LOCAL_PATH)/common-props.mk
 
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
@@ -42,7 +39,10 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.common@5.0 \
     android.hardware.audio.common@5.0-util \
     android.hardware.audio.effect@5.0 \
-    libaudio-resampler
+    libaudio-resampler \
+    libaudiohal \
+    libaudiohal_deathhandler \
+    libstagefright_softomx
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -67,6 +67,10 @@ PRODUCT_COPY_FILES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.oneplus_msm8998
+
+# Media
+PRODUCT_PACKAGES += \
+    libmediaplayerservice
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -100,7 +104,7 @@ PRODUCT_PACKAGES += \
     tri-state-key_daemon
 
 # VNDK
-PRODUCT_TARGET_VNDK_VERSION := 28
+PRODUCT_TARGET_VNDK_VERSION := 29
 
 # VNDK-SP
 PRODUCT_PACKAGES += \

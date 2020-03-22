@@ -65,14 +65,14 @@ static void set_fingerprint()
 		property_override("ro.product.system.device", "oneplus5");
 		property_override("ro.product.system.model", "OnePlus 5");
 		property_override("ro.product.device", "OnePlus5");
-		property_override("ro.build.fingerprint", "OnePlus/OnePlus5/OnePlus5:9/PKQ1.180716.001/1912311102:user/release-keys");
-		property_override("ro.system.build.fingerprint", "OnePlus/OnePlus5/OnePlus5:9/PKQ1.180716.001/1912311102:user/release-keys");
+		property_override("ro.build.fingerprint", "OnePlus/OnePlus5/OnePlus5:10/QKQ1.191014.012/2003241825:user/release-keys");
+		property_override("ro.system.build.fingerprint", "OnePlus/OnePlus5/OnePlus5:10/QKQ1.191014.012/2003241825:user/release-keys");
     } else if (variant == "OnePlus5T") {
                 property_override("ro.product.system.device", "oneplus5t");
                 property_override("ro.product.system.model", "OnePlus 5T");
                 property_override("ro.product.device", "OnePlus5T");
-		property_override("ro.build.fingerprint", "OnePlus/OnePlus5T/OnePlus5T:9/PKQ1.180716.001/1912311102:user/release-keys");
-		property_override("ro.system.build.fingerprint", "OnePlus/OnePlus5T/OnePlus5T:9/PKQ1.180716.001/1912311102:user/release-keys");
+		property_override("ro.build.fingerprint", "OnePlus/OnePlus5T/OnePlus5T:10/QKQ1.191014.012/2003161153:user/release-keys");
+		property_override("ro.system.build.fingerprint", "OnePlus/OnePlus5T/OnePlus5T:10/QKQ1.191014.012/2003161153:user/release-keys");
 	}
 
 	// Common Properties
