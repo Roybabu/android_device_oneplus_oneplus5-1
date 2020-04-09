@@ -1,0 +1,12 @@
+# Camera
+persist.camera.                   u:object_r:exported_system_prop:s0
+
+# Fingerprint
+fpc_kpi                           u:object_r:exported_fingerprint_prop:s0
+
+# RIL
+persist.sys.assert.panic          u:object_r:exported_system_prop:s0
+persist.sys.oem.region            u:object_r:exported_system_prop:s0
+
+# Thermal
+sys.thermal.para                  u:object_r:exported_system_prop:s0
