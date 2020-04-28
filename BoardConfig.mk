@@ -135,6 +135,11 @@ USE_SENSOR_MULTI_HAL := true
 
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
+BOARD_SEPOLICY_DIR += \
+    device/qcom/sepolicy/legacy-um/vendor/common \
+    device/qcom/sepolicy/legacy-um/vendor/msm8998
+
+TARGET_USES_PREBUILT_VENDOR_SEPOLICY := true
 
 # Treble
 BOARD_VNDK_VERSION := current
